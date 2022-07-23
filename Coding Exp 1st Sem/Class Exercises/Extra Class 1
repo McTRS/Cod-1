@@ -1,16 +1,11 @@
 #Código para fechar o programa só quando o usuário digitar x
 sair=str(input('Ensira X caso deseje fechar o programa: '))
-
 #Caso o usuário não queria sair, o código vai continuar rodando.
-
 while ((sair != 'x'and (sair != 'X')
-
 #Código para inserir as méadias logo apos analisar os casos de Aprovado e Reprovado
-
 nota1= float(input('Primeira nota: '))
 nota2=float(input('Segunda nota: ')
 media=float(nota1+nota2)/2
-
    if media >=7:
        print(' ')
        print('Parabéns! VocÊ foi aprovado!', media)
@@ -29,15 +24,29 @@ media=float(nota1+nota2)/2
           print('Você não alcançou a média necessária, mais sorte na próxima vez. Sua média: ', media_r)
    print('')
    sair= input('Insira X caso deseje fechar o programa: ')
-
-
-
 # Código para fechar o programa só quando o usuário digitar x
 sair = str(input('Ensira X caso deseje fechar o programa: '))
-
 # Caso o usuário não queria sair, o código vai continuar rodando.
-
 while ((sair != 'x' and (sair != 'X'))):
    nota1= float(input('Primeira nota: '))
    nota2= float(input('Segunda nota: '))
    media= float(nota1+nota2)/2
+   if media >= 7:
+      print(' ')
+      print('Parabéns! Você foi aprovado!', media)
+   else:
+      print(' ')
+      print('Você não foi aprovado. Sua média é', media)
+      print(' ')
+      nota_r = float(input('Nota de recuperaçao para nova média: '))
+      media_r = (media + nota_r) / 2
+
+      if media_r >= 7:
+         print(' ')
+         print('Parabéns! Sua nova média de', media_r, ' o aprovou.')
+      else:
+         print(' ')
+         print('Você não alcançou a média necessária, mais sorte na próxima vez. '
+               'Sua média: ', media_r)
+print('')
+sair = str(input('Insira X caso deseje fechar o programa: '))
