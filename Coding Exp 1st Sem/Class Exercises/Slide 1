@@ -1,0 +1,6 @@
+totalSeg=int(input('tempo em segundos: '))
+hora=totalSeg//3600
+A=(totalSeg%3600)
+minutos=A//60
+segundo=A%60
+print(hora, '.', minutos, '.',segundo)
