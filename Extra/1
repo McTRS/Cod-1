@@ -1,0 +1,7 @@
+import time
+import datetime
+for i in range(100):
+   now=datetime.datetime.now()
+   date_time=now.strftime('%d/%m/%Y %H:%M:%S')
+   print(date_time)
+   time.sleep(1)
