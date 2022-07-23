@@ -1,0 +1,15 @@
+x = int(input('Quantas caixas? '))
+caixa = x
+if caixa >= 26:
+    print('O caminhão não carrega')
+if caixa <= 0:
+    print('O caminhão não carrega')
+if caixa >= 1 and caixa <= 25:
+    print('O caminhão carrega.')
+peso = 5
+if caixa >= 1 and caixa <= 25:
+   print('O peso total será: ', peso*x, 'Kg')
+if caixa >= 26:
+    print('O peso total será: 0')
+if caixa <= 0:
+    print('O peso total será: 0')
