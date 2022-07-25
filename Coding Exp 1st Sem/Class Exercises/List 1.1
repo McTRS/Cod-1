@@ -1,0 +1,50 @@
+x = 0
+y = 0
+mulher = 0
+homem = 0
+idadef = 0
+idadem = 0
+salm = 0
+salf = 0
+saltotalm = 0
+saltotalf = 0
+salmaxm = 0
+salmaxf = 0
+
+x = int(input('Qauntos trabalhadores? '))
+for x in range(1, x+1):
+   y = str(input('Homem ou Mulher [M/F]? '))
+   if y == 'M'and y == 'm':
+      homem += 1
+      idadem = int(input('Qual a idade? '))
+      if 0 <= idadem < 30:
+         salm = float(input('Qual o salário?'))
+         saltotalm += salm
+      elif idadem < 0:
+         break
+      else:
+         print(' ')
+
+   elif y == "f" and y == 'F':
+      mulher += 1
+      idadef = int(input('Qual a idade? '))
+      if 0 <= idadef < 30:
+         salf = float(input('Qual o salário? '))
+         saltotalf += salf
+      elif  idadef < 0:
+         break
+      else:
+         print(' ')
+
+   if idadem >= 0 and idadem < 30 and salm > salmaxm:
+      salmaxm = salm
+   if idadef >= 0 and idadef < 30 and salf > salmaxf:
+      salmaxf = salf
+
+print('media salarial masculina:', saltotalm/homem)
+print('media salarial feminina:', saltotalf/mulher)
+
+if salmaxf > salmaxm:
+   print('maior salário entre menores de 30:', salmaxf)
+elif salmaxm > salmaxf:
+   print('maior salário entre menores de 30:', salmaxm)
