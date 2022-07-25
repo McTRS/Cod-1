@@ -1,0 +1,21 @@
+somap = 0
+soman = 0
+porcem = 0
+y = 0
+x = True
+
+while x is True:
+   y= str(input('você está satisfeito? [S/N] '))
+   if y == 'S' or y == 's':
+      somap = somap + 1
+      porcem = porcem + 1
+
+   elif y == 'N' or y == 'n':
+      soman = soman + 1
+      porcem = porcem + 1
+
+   else:
+      x = False
+
+print('gostaram:', (somap / porcem)* 100)
+print('não gostaram:', (soman / porcem)* 100)
