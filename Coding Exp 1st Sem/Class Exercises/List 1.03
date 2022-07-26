@@ -1,0 +1,25 @@
+somap = 0
+media = 0
+somai = 0
+
+n = int(input('insira um numero positivo inteiro: '))
+while n != 0:
+    for x in range(1, n + 1):
+        if x % 2 == 0:
+            somap += 1
+            media += x
+        if x % 2 != 0:
+            somai += 1
+
+    if somap > 0:
+        print('temos ', somap, 'numeros pares')
+        print('a media é', media / somap)
+    else:
+        print('apenas o numero 1 encontrado, não há valores pares')
+
+    print('temos ', somai, 'numeros impares')
+
+    n = int(input('insira um numero positivo inteiro: '))
+    somap = 0
+    media = 0
+    somai = 0
