@@ -1,0 +1,21 @@
+boimaior = 0
+boimenor = 99999
+nummaior = 0
+nummenor = 0
+
+
+for x in range(1, 5):
+    y = float(input('peso do boi: '))
+    z = int(input('numero de identificação: '))
+
+    if y > boimaior:
+        boimaior = y
+        nummaior = z
+
+    if y < boimenor:
+        boimenor = y
+        nummenor = z
+
+print('maior boi é: ', boimaior, '/', nummaior)
+print('o menor boi é: ', boimenor, '/', nummenor)
+print('se houverem bois com o mesmo peso, o boi que aparecerá será o boi com maior numero da tag')
