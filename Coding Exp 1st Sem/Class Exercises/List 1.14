@@ -1,0 +1,20 @@
+media = 0
+soma = 0
+percem = 0
+z = 0
+
+x = int(input('digite quantas pessoas são? '))
+
+for y in range(1, x+1):
+   y= int(input('idade: '))
+
+   if (y != -1):
+      soma += y
+      media = soma/x
+
+   if 21 <= y <= 65:
+      z += 1
+      percem = (z/x)*100
+
+print('media =', media)
+print('porcentagem =', percem)
