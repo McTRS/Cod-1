@@ -1,0 +1,15 @@
+y = str
+z = str
+q = 0
+
+while y != 'xxx' or y != "XXX":
+    y = input('nome: ')
+    if y == 'xxx' or y == 'XXX':
+        break
+
+    k = float(input('preço do produto: '))
+
+    if k > q:
+        z = y
+        q = k
+print('produto mais caro:', z, 'custa', q)
