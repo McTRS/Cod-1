@@ -1,0 +1,38 @@
+n50 = int(0)
+n20 = int(0)
+n10 = int(0)
+n5 = int(0)
+n1 = int(0)
+
+print('notas disponiveis no caixa: 50, 20, 10, 5 ,1.')
+x = int(input('valor a ser sacado: '))
+
+while x != 0:
+    n50 = x // 50
+    resto50 = x % 50
+
+    if resto50 != 0:
+        n20 = resto50 // 20
+        resto20 = resto50 % 20
+
+        if resto20 != 0:
+            n10 = resto20 // 10
+            resto10 = resto20 % 10
+
+            if resto10 != 0:
+                n5 = resto10 // 5
+                resto5 = resto10 % 5
+
+                if resto5 != 0:
+                    n1 = resto5
+    if x == 0:
+        break
+
+    print('as notas devolvidas são: ')
+    print(n50, 'notas de 50')
+    print(n20, 'notas de 20')
+    print(n10, 'notas de 10')
+    print(n5, 'notas de 5')
+    print(n1, 'notas de 1')
+
+    x = int(input('valor a ser sacado: '))
