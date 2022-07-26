@@ -1,0 +1,38 @@
+m = 0
+f = 0
+posm = 0
+negm = 0
+posf = 0
+negf = 0
+s = 0
+n = 0
+x = 2000
+
+for x in range(1, 2001):
+    y = str(input('qual o seu sexo? [M/F] '))
+    z = str(input('gostou do novo produto lançado? [S/N] '))
+    if y == 'M' or y == 'm':
+        m += 1
+        if z == 's' or z == 'S':
+            posm += 1
+        elif z == 'n' or z == 'N':
+            negm += 1
+        else:
+            print('error')
+            break
+    elif y == 'F' or y == 'f':
+        f += 1
+        if z == 's' or z == 'S':
+            posf += 1
+        elif z == 'n' or z == 'N':
+            negf += 1
+        else:
+            print('error')
+            break
+    else:
+        print('error')
+        break
+
+print('pessoas que gostaram: ', posf + posm)
+print('pessoas que não gostaram: ', negm + negf)
+print('porcentagem de homens que não gostaram: ', (negm/x)*100)
