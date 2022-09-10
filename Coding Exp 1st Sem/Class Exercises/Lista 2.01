@@ -1,0 +1,17 @@
+somac = 0
+somaf = 0
+mmf = 0
+
+for x in range(1, 51):
+    y = int(input('temperatura em Celsius: '))
+    somac += y
+    mediac = somac/50
+    tempf = (y*1.8)-32
+    somaf += tempf
+    mediaf = somaf/50
+    if y >= mediaf:
+        mmf += 1
+
+print(f'Media das temperaturas em Celsius: {mediac}.')
+print(f'Media das temperaturas em Fahrenheit: {mediaf}.')
+print(f'Foras {mmf} temperaturas que ficaram acida de {mediaf}.')
