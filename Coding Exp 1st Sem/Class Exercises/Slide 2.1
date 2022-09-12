@@ -1,0 +1,13 @@
+qa = 0
+qn = 0
+qe = 0
+
+cadeia = input('entre com uma cadeia: ')
+for i in range(0, len(cadeia)):
+    if cadeia[i].isalpha():
+        qa += 1
+    elif cadeia[i].isdigit():
+        qn += 1
+    else:
+        qe += 1
+print(f'letras: {qa}, numeros: {qn}, outros: {qe}')
