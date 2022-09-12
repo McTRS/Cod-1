@@ -1,0 +1,15 @@
+vet = [0]*10
+q = 0
+
+for i in range(10):
+    x = int(input(f'digite um valor para {i+1}: '))
+    vet[i] = x
+
+print(vet)
+
+y = int(input('insira o valor que procura: '))
+for j in range(10):
+    if (vet[j] == y):
+        q += 1
+
+print(f'o valor {y} se repete {q} vezes.')
