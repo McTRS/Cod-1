@@ -1,0 +1,13 @@
+dna = input('digite a sequencia de dna: ')
+dna = dna.upper()
+print('dna: ', dna)
+
+dna = dna.replace('C', '@')
+dna = dna.replace('G', 'C')
+dna= dna.replace('@', 'G')
+
+dna = dna.replace('A', '#')
+dna = dna. replace('T', 'A')
+dna = dna.replace('#', 'T')
+
+print(f'dna complementar: {dna}')
