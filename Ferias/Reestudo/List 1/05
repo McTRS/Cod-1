@@ -1,0 +1,7 @@
+soma = 0
+
+for i in range(0, 25):
+    x = int(input(f'peso da caixa {i + 1}: '))
+    soma += x
+
+print(soma)
