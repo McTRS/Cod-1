@@ -1,0 +1,11 @@
+somap = 0
+somai = 0
+
+for i in range(0, 51):
+    if i % 2 == 0:
+        somap += i
+    else:
+        somai += i
+
+print(f'a soma dos pares é: {somap}')
+print(f'a soma dos impares é: {somai}')
