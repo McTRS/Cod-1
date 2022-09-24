@@ -1,0 +1,8 @@
+somatotal = 0
+
+for i in range(0, 50):
+    x = int(input(f'quantidade do produto {i+1}: '))
+    y = float(input(f'qual o preço do produto {i+1}: '))
+    somatotal += y*x
+
+print(somatotal)
