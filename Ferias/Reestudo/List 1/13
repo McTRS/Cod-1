@@ -1,0 +1,11 @@
+base = int(input('base?: '))
+
+if base > 0:
+    altura = int(input('altura?: '))
+    if altura > 0:
+        area = base*altura/2
+        print(area)
+    else:
+        print('conta nao efetuada')
+else:
+    print('conta nao efetuada')
